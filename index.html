@@ -1,21 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>My Personal Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+            position: relative; /* Required for absolute positioning of children */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #embed-container-right {
+            position: absolute;
+            right: 40px;
+            bottom: 40px;
+            width: 200px; /* Adjust size as needed */
+            height: 300px; /* Adjust size as needed */
+        }
+
+        #embed-container-left {
+            position: absolute;
+            left: 40px;
+            top: 50%;
+            transform: translateY(-50%); /* Center vertically */
+            width: 200px; /* Adjust size as needed */
+            height: 300px; /* Adjust size as needed */
+        }
+    </style>
 </head>
 <body>
     <h1>Hello, welcome to my website!</h1>
     <p>This is a paragraph of text about me or my projects.</p>
 
-    <!-- Container for the first embedded object -->
+    <!-- Containers for embedded objects -->
     <div id="embed-container-right"></div>
-
-    <!-- Container for the second embedded object -->
     <div id="embed-container-left"></div>
 
     <!-- Scripts for embedded objects -->
-
     <script
         type="module"
         src="https://agent.d-id.com/v1/index.js"
@@ -35,6 +62,25 @@
         data-agent-id="agt_iHPQgp7p">
         data-container="embed-container-left" <!-- Assuming script supports this -->
         data-monitor="true">
+    </script>
+
+    <!-- JavaScript to reposition embedded content -->
+    <script>
+        window.onload = function() {
+            // Find content and move it to the right container
+            var embeddedRightContent = document.querySelector('.class-or-id-generated-by-script');
+            var rightContainer = document.getElementById('embed-container-right');
+            if (embeddedRightContent && rightContainer) {
+                rightContainer.appendChild(embeddedRightContent);
+            }
+
+            // Find content and move it to the left container
+            var embeddedLeftContent = document.querySelector('.another-class-or-id-generated-by-script');
+            var leftContainer = document.getElementById('embed-container-left');
+            if (embeddedLeftContent && leftContainer) {
+                leftContainer.appendChild(embeddedLeftContent);
+            }
+        }
     </script>
 </body>
 </html>
