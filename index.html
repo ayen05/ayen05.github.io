@@ -4,9 +4,37 @@
     <title>My Personal Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
     <h1>Hello, welcome to my website!</h1>
     <p>This is a paragraph of text about me or my projects.</p>
+
+    <!-- Container for the first embedded object -->
+    <div id="embed-container-right"></div>
+
+    <!-- Container for the second embedded object -->
+    <div id="embed-container-left"></div>
+
+    <!-- Scripts for embedded objects -->
+
+    <script
+        type="module"
+        src="https://agent.d-id.com/v1/index.js"
+        data-name="did-agent"
+        data-mode="fabio"
+        data-client-key="YXV0aDB8NjRiNDg3MTA0ODdkMjc2NjRhZDJmMWNlOnM4OF9penM1VlN2SHFhSWFhRHc0eg=="
+        data-agent-id="agt_8lKlNhk_">
+        data-container="embed-container-right" <!-- Assuming script supports this -->    
+        data-monitor="true"
+    </script>
+    <script
+        type="module"
+        src="https://agent.d-id.com/v1/index.js"
+        data-name="did-agent"
+        data-mode="fabio"
+        data-client-key="Z29vZ2xlLW9hdXRoMnwxMDI1ODYyNjk5NTAxNjA3NDY2ODU6Q19CQ0dxeDNqaHcxUGJmSXRvdVc2"
+        data-agent-id="agt_iHPQgp7p">
+        data-container="embed-container-left" <!-- Assuming script supports this -->
+        data-monitor="true">
+    </script>
 </body>
 </html>
