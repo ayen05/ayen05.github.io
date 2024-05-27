@@ -2,8 +2,26 @@ body {
     font-family: Arial, sans-serif;
     margin: 40px;
     background-color: #f4f4f9;
+    position: relative; /* Make sure the body is positioned */
 }
 
 h1 {
     color: #333;
+}
+
+#embed-container-right {
+    position: absolute;
+    right: 40px; /* Match body margin */
+    bottom: 40px; /* Position at the bottom-right */
+    width: 200px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+}
+
+#embed-container-left {
+    position: absolute;
+    left: 40px; /* Match body margin */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical centering */
+    width: 200px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
 }
