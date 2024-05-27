@@ -1,78 +1,9 @@
-/* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    height: 100%;
+body {
     font-family: Arial, sans-serif;
-    background: #f8f9fa;
+    margin: 40px;
+    background-color: #f4f4f9;
 }
 
-header {
-    background: white;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 10px 0;
-}
-
-nav ul li {
-    padding: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #5f6368;
-    font-size: 14px;
-}
-
-.main-content {
-    text-align: center;
-    padding: 200px 20px 50px;
-}
-
-.main-content h1 {
-    font-size: 24px;
-    color: #202124;
-    margin-bottom: 20px;
-}
-
-.main-content p {
-    color: #5f6368;
-    margin-bottom: 30px;
-}
-
-input[type="text"] {
-    width: 50%;
-    padding: 15px;
-    font-size: 16px;
-    border: 1px solid #dfe1e5;
-    border-radius: 24px;
-    outline: none;
-    margin-top: 20px;
-}
-
-input[type="text"]:focus {
-    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
-}
-
-footer {
-    background: #f8f9fa;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
-    color: #202124;
+h1 {
+    color: #333;
 }
