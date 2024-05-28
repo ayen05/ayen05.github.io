@@ -41,13 +41,13 @@ main {
 
 .video-call-container {
     display: flex;
-    gap: 40px; /* Separation between the boxes */
+    gap: 12px; /* Separation between the boxes */
     margin-bottom: 40px;
 }
 
 .box {
-    width: 512px; /* Square shape */
-    height: 512px; /* Square shape */
+    width: 448px; /* Square shape */
+    height: 448px; /* Square shape */
     background-color: #000080; /* Navy Blue */
     display: flex;
     justify-content: center;
