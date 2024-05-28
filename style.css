@@ -42,7 +42,7 @@ main {
 .box {
     width: 512px;
     height: 512px;
-    background-color: #333;
+    background-color: #000080; /* Navy Blue */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,4 +70,3 @@ main {
     max-width: 100px;
     filter: grayscale(100%);
 }
-
