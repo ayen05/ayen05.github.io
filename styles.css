@@ -3,11 +3,16 @@ body {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 header {
     background-color: #1a1a1a;
     padding: 10px 20px;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
 }
@@ -30,7 +35,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    height: calc(100vh - 60px); /* Adjust height to take header into account */
+    width: 100%;
 }
 
 .video-call-container {
