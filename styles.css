@@ -46,8 +46,8 @@ main {
 }
 
 .box {
-    width: 400px; /* Square shape */
-    height: 400px; /* Square shape */
+    width: 412px; /* Square shape */
+    height: 412px; /* Square shape */
     background-color: #000080; /* Navy Blue */
     display: flex;
     justify-content: center;
