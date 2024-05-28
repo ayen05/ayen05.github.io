@@ -4,8 +4,7 @@ body {
     background-color: #000;
     color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -15,8 +14,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    position: absolute;
-    top: 0;
 }
 
 nav {
@@ -34,13 +31,12 @@ nav {
 }
 
 main {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
-    padding-top: 60px; /* Adjust padding to ensure header space */
+    align-items: center;
+    padding-top: 20px; /* Ensure some padding from the header */
 }
 
 .video-call-container {
@@ -50,8 +46,8 @@ main {
 }
 
 .box {
-    width: 300px; /* Adjust width and height to make the box square */
-    height: 300px; /* Adjust width and height to make the box square */
+    width: 300px; /* Square shape */
+    height: 300px; /* Square shape */
     background-color: #000080; /* Navy Blue */
     display: flex;
     justify-content: center;
