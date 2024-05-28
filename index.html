@@ -2,85 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f9;
-            position: relative; /* Required for absolute positioning of children */
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        #embed-container-right {
-            position: absolute;
-            right: 40px;
-            bottom: 40px;
-            width: 200px; /* Adjust size as needed */
-            height: 300px; /* Adjust size as needed */
-        }
-
-        #embed-container-left {
-            position: absolute;
-            left: 40px;
-            top: 50%;
-            transform: translateY(-50%); /* Center vertically */
-            width: 200px; /* Adjust size as needed */
-            height: 300px; /* Adjust size as needed */
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diarupt AI</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, welcome to my website!</h1>
-    <p>This is a paragraph of text about me or my projects.</p>
-
-    <!-- Containers for embedded objects -->
-    <div id="embed-container-right"></div>
-    <div id="embed-container-left"></div>
-
-    <!-- Scripts for embedded objects -->
-    <script
-        type="module"
-        src="https://agent.d-id.com/v1/index.js"
-        data-name="did-agent"
-        data-mode="fabio"
-        data-client-key="YXV0aDB8NjRiNDg3MTA0ODdkMjc2NjRhZDJmMWNlOnM4OF9penM1VlN2SHFhSWFhRHc0eg=="
-        data-agent-id="agt_8lKlNhk_">
-        data-container="embed-container-right" <!-- Assuming script supports this -->    
-        data-monitor="true"
-    </script>
-    <script
-        type="module"
-        src="https://agent.d-id.com/v1/index.js"
-        data-name="did-agent"
-        data-mode="fabio"
-        data-client-key="Z29vZ2xlLW9hdXRoMnwxMDI1ODYyNjk5NTAxNjA3NDY2ODU6Q19CQ0dxeDNqaHcxUGJmSXRvdVc2"
-        data-agent-id="agt_iHPQgp7p">
-        data-container="embed-container-left" <!-- Assuming script supports this -->
-        data-monitor="true">
-    </script>
-
-    <!-- JavaScript to reposition embedded content -->
-    <script>
-        window.onload = function() {
-            // Find content and move it to the right container
-            var embeddedRightContent = document.querySelector('.class-or-id-generated-by-script');
-            var rightContainer = document.getElementById('embed-container-right');
-            if (embeddedRightContent && rightContainer) {
-                rightContainer.appendChild(embeddedRightContent);
-            }
-
-            // Find content and move it to the left container
-            var embeddedLeftContent = document.querySelector('.another-class-or-id-generated-by-script');
-            var leftContainer = document.getElementById('embed-container-left');
-            if (embeddedLeftContent && leftContainer) {
-                leftContainer.appendChild(embeddedLeftContent);
-            }
-        }
-    </script>
+    <header>
+        <nav>
+            <button class="demo-button">Book a demo</button>
+            <button class="demo-button">Watch demo</button>
+        </nav>
+    </header>
+    <main>
+        <div class="video-call-container">
+            <div class="video-call">
+                <img src="your-image-path.jpg" alt="Video Call">
+            </div>
+        </div>
+        <div class="integrated-tools">
+            <p>Integrated with the tools you use and love</p>
+            <div class="logos">
+                <img src="lever-logo.png" alt="Lever">
+                <img src="greenhouse-logo.png" alt="Greenhouse">
+                <img src="workable-logo.png" alt="Workable">
+                <img src="bamboohr-logo.png" alt="BambooHR">
+                <img src="workday-logo.png" alt="Workday">
+            </div>
+        </div>
+    </main>
 </body>
 </html>
