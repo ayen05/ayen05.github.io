@@ -40,8 +40,8 @@ main {
 }
 
 .box {
-    width: 512px;
-    height: 512px;
+    width: 400px;
+    height: 300px;
     background-color: #000080; /* Navy Blue */
     display: flex;
     justify-content: center;
